@@ -37,9 +37,9 @@ header a, .main-nav a, footer a {
 }
 header a:hover, .main-nav a:hover, footer a:hover {
     background-color: #EB5428;
-    color:#F2F2F2;
-    fill: #fff;
+    color:#F2F2F2;    
 }
+
 header li {
     display:inline-block;    
 }
@@ -193,8 +193,10 @@ main p, #ingredients, #details, #directions {
 
 
 #avatar-icon {
-    stroke:#EB5428;
-    
+    stroke:#EB5428;    
+}
+#avatar-icon:hover {
+    stroke:#fff;
 }
 #sign-in {
     position: absolute;
@@ -205,9 +207,7 @@ main p, #ingredients, #details, #directions {
 #sign-in span {
     color: black;
 }
-/* input ~ #sign-in {
-    visibility: visible;
-} */
+
 footer {
     font-family: 'Bebas Neue', cursive;
     font-size: 20px;
@@ -259,16 +259,12 @@ label {     /*///////////menu icon////////*/
     user-select: none;
 }
 label span {
-    /* background-color: #ffffff; */
     display: block;
-    /* height: 2px; */
     position: relative;
     transition: background-color .2s ease-out;
     width: 18px;
 }
 label span:before, label span:after {
-    /* background: #ffffff;
-    content: ''; */
     display: block;
     height: 100%;
     position: absolute;
@@ -293,18 +289,6 @@ input:checked ~ ul {
 }
 
 
-input:checked ~ label span {
-    background: transparent;
-}
-input:checked ~ label span:before {
-    transform: rotate(-45deg);
-}
-input:checked ~ label span:after {
-    transform: rotate(45deg);
-}
-input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
-    top: 0;
-} 
 #hide-words {
     display: none;
 }
@@ -402,6 +386,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
+        max-height: 350px;
     }
     footer {
         display: grid;
@@ -481,6 +466,10 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     #side-dishes figure {
         text-align: left;
     }
+    #side-dishes figure:hover {
+        background-color: #F2A007;
+        height:350px;
+    }
     #side-dishes img {
         width: 70%;
     }
@@ -490,8 +479,6 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
         left: revert;
        
     }
-    
-
     .side-dish-dl {
         position: relative;
         top: 100px;

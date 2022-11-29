@@ -1,0 +1,583 @@
+/*COLOR PALETTE
+black = #0D0D0D
+off-white = #F2F2F2
+teal = #7ABFBF
+light teal = rgba(122, 191, 191, .5)
+orange = #EB5428
+
+fonts ------font-family: 'Bebas Neue', cursive;
+font-family: 'Montserrat', sans-serif;*/
+
+html {
+    background-color: rgba(122, 191, 191, .5);
+}
+body {
+    background-color: #F2F2F2;
+    width: 414px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    text-align: center;
+   
+}
+header ul, .main-nav ul, footer ul {
+    list-style: none;
+    
+}
+header a, .main-nav a, footer a {
+    text-decoration: none;
+    color: #EB5428;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    transition: all .5 ease-out;
+}
+header a:hover, .main-nav a:hover, footer a:hover {
+    background-color: #EB5428;
+    color:#F2F2F2;
+    fill: #fff;
+}
+header li {
+    display:inline-block;    
+}
+header svg {
+    position: relative;
+    bottom: 15px;
+    right: 35px;
+}
+header, main, footer {
+    position: relative;
+    top: 200px;
+}
+#jump-icon {
+    position: relative;
+    right: 70px;
+}
+main p, #ingredients, #details, #directions {
+    margin: 10px;
+}
+#first-pic img {
+    width: 414px;
+}
+#details h2, #ingredients h2, #directions h2, #side-dishes h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    text-align: center;
+}
+#details dt, #side-dishes dt {
+    font-weight: bold;
+}
+#details dd {
+    position: relative;
+    left: 65px;
+    bottom: 19px;
+}
+/* THE DD STYLES ARE OVERRIDING THESE!!! #t-cheesington, #servings {
+    position: relative;
+    right: 20px;
+} */
+#ingredients ul {
+    position: relative;
+    right: 30px;
+}
+#ingredients li {
+    margin-bottom: 10px;
+}
+#directions li {
+    margin-bottom: 20px;
+}
+#side-dishes {
+    background-color: #7ABFBF;
+    padding-bottom: 10px;
+}
+#side-dishes h2 {
+    padding-top: 5px;
+}
+#side-dishes figcaption {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    position: relative;
+    left: 120px;
+    top: 21px;
+}
+#side-dishes svg:not(#last-star, #last-star2, #last-star3) {
+    fill: #EB5428;
+}
+#side-dishes img {
+    width: 30%;
+}
+#side-dish-div {
+    position: relative;
+    bottom: 20px;
+}
+#side-dishes p, #side-dishes dl {
+    position: relative;
+    left: 110px;
+    bottom: 80px;
+}
+#side-dishes dl {
+    position: relative;
+    left: 120px;
+}
+#side-dishes dt {
+    margin-bottom: 5px;
+}
+
+#side-dishes figure {
+    height: 140px;
+    margin: 10px 20px;
+    transition: all 0.2s ease-in;
+}
+#side-dishes figure:hover {
+    background-color: #F2A007;
+    /* padding-left: 10px; */
+}
+.main-nav img {
+    width: 20%;
+    margin-bottom: 30px;
+}
+.main-nav a {
+    position: relative;
+    left: 50px;
+    display: inline-block;
+}
+.main-nav svg {
+    display: block;
+}
+.main-nav {
+    position:absolute;
+    top: 0px;
+}
+.search {
+    display: flex;
+    position: absolute;
+    top: 120px;
+    left: 120px;
+  }
+  #site-search {
+    border: 3px solid #EB5428;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+  }
+  .searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #EB5428;
+    background: #EB5428;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  .search svg {
+    stroke: #fff;
+    position: relative;
+    right: 5px;
+    bottom: 3px; 
+  }
+ 
+#home-icon {
+    background-color: #EB5428;
+    padding: 2px 50px;
+    position: absolute;
+    top: 26px;
+    left: 140px;
+    transition: all .5 ease-in;
+}
+#home-icon:hover {
+    background-color: #fff;
+    stroke:#EB5428;
+}
+
+
+#avatar-icon {
+    stroke:#EB5428;
+    
+}
+#sign-in {
+    position: absolute;
+    left: 340px;
+    bottom: 50px;
+    width: 70px;
+}
+#sign-in span {
+    color: black;
+}
+/* input ~ #sign-in {
+    visibility: visible;
+} */
+footer {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    text-align: center;
+}
+footer ul {
+    width: 100%;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+footer li {
+    display: inline-block;
+}
+footer svg {
+    position: relative;
+    bottom: 15px;
+    right: 50px;
+}
+footer img {
+    width: 30%;
+    position: relative;
+    bottom: 170px;
+}
+footer section {
+   height: 550px;
+}
+
+#footer-wrap {
+    position: relative;
+    top: 130px;
+}
+
+/* HAMBURGER MENU STUFF */
+.main-nav ul {
+    overflow: hidden;
+    max-height: 0;
+    transition: all .5s ease-out;
+    text-align: center;
+    background-color: #fff;
+}
+
+label {     /*///////////menu icon////////*/
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+label span {
+    /* background-color: #ffffff; */
+    display: block;
+    /* height: 2px; */
+    position: relative;
+    transition: background-color .2s ease-out;
+    width: 18px;
+}
+label span:before, label span:after {
+    /* background: #ffffff;
+    content: ''; */
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+label span:before {
+    top: 5px;
+}
+label span:after {
+    top: -5px;
+}
+
+/*///////////menu btn///////////////*/
+
+#toggle-checkbox {
+    display: none;
+}
+input:checked ~ ul {
+    max-height: 900px;
+    overflow: visible;
+}
+
+
+input:checked ~ label span {
+    background: transparent;
+}
+input:checked ~ label span:before {
+    transform: rotate(-45deg);
+}
+input:checked ~ label span:after {
+    transform: rotate(45deg);
+}
+input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
+    top: 0;
+} 
+#hide-words {
+    display: none;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    body {
+        width: 768px;
+        margin: 0 auto;
+    }
+    h1 {
+        text-align: left;
+        margin-left: 10px;
+    }
+    header ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    .main-nav {
+        position: absolute;
+        top: 56px;
+    }
+    .main-nav ul {
+        overflow: visible;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: 2fr 0;
+        position: relative;
+        right: 80px;
+        width: 768px;
+    }
+    input:checked ~ ul {
+        max-height: 0px;
+    }
+    .main-nav img {
+        
+        width: 34%;
+        display: block;
+        position: relative;
+        bottom: 70px;
+        left: 80px;
+        
+    }
+    .main-nav a {
+        left: 45px;
+    }
+    #sign-in {
+        position: relative;
+        left: 680px;
+        color:#EB5428;
+        bottom: 120px;
+    }
+    #sign-in:hover {
+        background-color: #EB5428;
+        color:#F2F2F2;
+        
+    }
+    #avatar-icon {
+        position: relative;
+        bottom: 60px;
+        left: 20px;
+    }
+    #avatar-icon:hover {
+        background-color: #EB5428;
+        stroke:#F2F2F2;
+    }
+    .search {
+        position: absolute;
+        top: -15px;
+        left: 500px;
+    }
+   
+    #home-icon {
+        position: relative;
+        left: 50px;
+        bottom: 60px;
+        padding: 0;
+        top: revert;
+        margin-bottom: 40px;
+
+    }
+    #first-pic img {
+        width: 768px;
+    }
+    #details dl {
+        position: relative;
+        left: 280px;
+    }
+    #grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #side-dishes-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr;
+    }
+    footer ul {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        margin-top: 50px;
+    }
+    footer section {
+        position: relative;
+        bottom: 90px;
+        height: 450px;
+    }
+    footer img {
+        width: 50%;
+    }
+    #breakfast {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    #toggle-checkbox, .toggle-label {
+        display: none;
+    }
+}
+
+
+
+@media screen and (min-width: 1280px) {
+    body {
+        width: 1280px;
+        margin: 0 auto;
+    }
+    h1 {
+        text-align: center;
+    }
+    main #first-pic {
+        display: grid;
+        grid-template-columns: 400px 700px;
+        position: relative;
+        left: 150px;
+        top: 2px;
+    }
+    #first-pic img {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        width: 90%;
+    }
+    #first-pic p {
+        grid-column-start: 2;
+        grid-column-end: 3; 
+    }
+    #details {
+        background: #000;
+        color:#7ABFBF;   
+    }
+    #details dl {
+        display: flex;
+
+    }
+    #details dt {
+        position: relative;
+        bottom: 30px;
+        right: 200px;
+    }
+    #details dd {
+        position: relative;
+        left: -330px;
+        bottom: 5px;
+    }
+    #side-dishes-grid {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    #side-dishes figure {
+        text-align: left;
+    }
+    #side-dishes img {
+        width: 70%;
+    }
+    #side-dishes-grid figcaption {
+        position:relative;
+        top: 230px;
+        left: revert;
+       
+    }
+    
+
+    .side-dish-dl {
+        position: relative;
+        top: 100px;
+        right: 120px;
+    }
+    .side-dish-dl dt {
+        position: absolute;
+    }
+    .side-dish-dl dd {
+        margin-left: 75px;
+    }
+    #servings {
+        margin-left:60px;
+    }
+    footer img {
+        width: 30%;
+        position: absolute;
+        top: 5px;
+        left: 20px;
+      }
+    #footer-wrap {
+        margin-left: 30px;
+        position: revert;
+    }
+    #sign-in {
+        position: relative;
+        left: 1060px;
+        bottom: 4px;
+    }
+    .main-nav ul {
+        width: 1000px;
+        position: relative;
+        bottom: 100px;
+        left: 20px;
+    }
+    .search {
+        position: absolute;
+        top: 190px;
+        left: 550px;
+    }
+    #home-icon {
+        position: relative;
+        top: 60px;
+        left: -40px;
+    }
+    .main-nav {
+        padding-bottom: 40px;
+        padding-right: 230px;
+        box-shadow: 10px 5px 5px grey;
+    }
+    .main-nav a {
+        left: 30px;
+    }
+    input:checked ~ ul {
+        max-height: 0px;
+    }
+    header ul {
+        display: flex;
+        justify-content: space-around;
+        width: 100px;
+        flex-direction: column;
+        position: absolute;
+        z-index: 3;
+        background-color: #fff;
+        height: 530px;
+        border: 5px solid #EB5428;
+        top: 60px;
+    }
+    .top-links a {
+        position: absolute;
+    }
+    header li {
+        margin: 15px;
+    }
+    header svg {
+        position: relative;
+        bottom: 45px;
+        right: 0px;
+    }
+    #jump-icon {
+        position: relative;
+        right: 0px;
+    }
+      
+    
+}
+
+
+

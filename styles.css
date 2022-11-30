@@ -33,11 +33,11 @@ header a, .main-nav a, footer a {
     color: #EB5428;
     font-family: 'Bebas Neue', cursive;
     font-size: 20px;
-    transition: all .5 ease-out;
+    transition: .5s;
 }
 header a:hover, .main-nav a:hover, footer a:hover {
     background-color: #EB5428;
-    color:#F2F2F2;    
+    color:#F2F2F2;  
 }
 
 header li {
@@ -143,6 +143,7 @@ main p, #ingredients, #details, #directions {
     position: relative;
     left: 50px;
     display: inline-block;
+
 }
 .main-nav svg {
     display: block;
@@ -198,11 +199,18 @@ main p, #ingredients, #details, #directions {
 #avatar-icon:hover {
     stroke:#fff;
 }
-#sign-in {
+/* #sign-in {
     position: absolute;
     left: 340px;
     bottom: 50px;
     width: 70px;
+} */
+.sign-in-avatar {
+    display: flex;
+    position: absolute;
+    top: 40px;
+    left: 280px;
+    width:70px;
 }
 #sign-in span {
     color: black;

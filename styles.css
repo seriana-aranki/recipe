@@ -344,12 +344,20 @@ input:checked ~ ul {
     .main-nav a {
         left: 45px;
     }
-    #sign-in {
+    /* #sign-in {
         position: relative;
         left: 680px;
         color:#EB5428;
-        bottom: 120px;
+        bottom: 120px; */
+    
+    .sign-in-avatar {
+        display: flex;
+        position: absolute;
+        top: 0px;
+        left: 700px;
+        width: 70px;
     }
+    
     #sign-in:hover {
         background-color: #EB5428;
         color:#F2F2F2;
@@ -511,11 +519,11 @@ input:checked ~ ul {
         margin-left: 30px;
         position: revert;
     }
-    #sign-in {
+    /* #sign-in {
         position: relative;
         left: 1060px;
         bottom: 4px;
-    }
+    } */
     .main-nav ul {
         width: 1000px;
         position: relative;
@@ -540,6 +548,15 @@ input:checked ~ ul {
     .main-nav a {
         left: 30px;
     }
+    .sign-in-avatar {
+        display: flex;
+        position: absolute;
+        top: 103px;
+        left: 1120px;
+        width: 70px;
+
+    }
+  
     input:checked ~ ul {
         max-height: 0px;
     }

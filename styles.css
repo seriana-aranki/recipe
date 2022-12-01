@@ -75,10 +75,7 @@ main p, #ingredients, #details, #directions {
     left: 65px;
     bottom: 19px;
 }
-/* THE DD STYLES ARE OVERRIDING THESE!!! #t-cheesington, #servings {
-    position: relative;
-    right: 20px;
-} */
+
 #ingredients ul {
     position: relative;
     right: 30px;
@@ -133,7 +130,7 @@ main p, #ingredients, #details, #directions {
 }
 #side-dishes figure:hover {
     background-color: #F2A007;
-    /* padding-left: 10px; */
+
 }
 .main-nav img {
     width: 20%;
@@ -185,7 +182,7 @@ main p, #ingredients, #details, #directions {
     position: absolute;
     top: 26px;
     left: 140px;
-    transition: all .5 ease-in;
+    transition: all .5s ease-in;
 }
 #home-icon:hover {
     background-color: #fff;
@@ -199,12 +196,7 @@ main p, #ingredients, #details, #directions {
 #avatar-icon:hover {
     stroke:#fff;
 }
-/* #sign-in {
-    position: absolute;
-    left: 340px;
-    bottom: 50px;
-    width: 70px;
-} */
+
 .sign-in-avatar {
     display: flex;
     position: absolute;
@@ -248,7 +240,7 @@ footer section {
     top: 130px;
 }
 
-/* HAMBURGER MENU STUFF */
+/* ------------HAMBURGER MENU STUFF---------- */
 .main-nav ul {
     overflow: hidden;
     max-height: 0;
@@ -257,7 +249,7 @@ footer section {
     background-color: #fff;
 }
 
-label {     /*///////////menu icon////////*/
+label {     
     cursor: pointer;
     display: inline-block;
     font-family: 'Bebas Neue', cursive;
@@ -295,8 +287,6 @@ input:checked ~ ul {
     max-height: 900px;
     overflow: visible;
 }
-
-
 #hide-words {
     display: none;
 }
@@ -344,11 +334,6 @@ input:checked ~ ul {
     .main-nav a {
         left: 45px;
     }
-    /* #sign-in {
-        position: relative;
-        left: 680px;
-        color:#EB5428;
-        bottom: 120px; */
     
     .sign-in-avatar {
         display: flex;
@@ -481,10 +466,12 @@ input:checked ~ ul {
     }
     #side-dishes figure {
         text-align: left;
+        transition: all 0.5s ease-in;
+        margin-bottom: 25px;
     }
     #side-dishes figure:hover {
         background-color: #F2A007;
-        height:350px;
+        height: 100%;
     }
     #side-dishes img {
         width: 70%;
@@ -519,11 +506,6 @@ input:checked ~ ul {
         margin-left: 30px;
         position: revert;
     }
-    /* #sign-in {
-        position: relative;
-        left: 1060px;
-        bottom: 4px;
-    } */
     .main-nav ul {
         width: 1000px;
         position: relative;
@@ -586,10 +568,34 @@ input:checked ~ ul {
     #jump-icon {
         position: relative;
         right: 0px;
-    }
-      
-    
+    }   
 }
 
 
+@media print {
+    img, .top-links, .main-nav, #side-dishes {
+        display: none;
+    }
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        position: relative;
+        bottom: 200px;
+        width: 100%;
+    }
+    #details {
+        float: left;
+    }
+    #ingredients {
+        float: right;
+    }
+    #directions {
+        clear: both;
+    }
+    footer {
+        display: none;
+    }
+    @page {
+        margin: 0.5in;
+    }
 
+}
